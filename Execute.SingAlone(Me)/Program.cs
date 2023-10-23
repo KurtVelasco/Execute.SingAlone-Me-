@@ -24,7 +24,7 @@ namespace Execute.SingAlone_Me_
                     outputDevice.Play();
                     while (outputDevice.PlaybackState == PlaybackState.Playing)
                     {
-                        Thread.Sleep(100);
+                        Thread.Sleep(1);
                     }
                 }
             });
@@ -34,17 +34,9 @@ namespace Execute.SingAlone_Me_
             });
 
             Task.WaitAll(songTask, countdownTask);
-           
+
 
         }
-
-        public static void Intro()
-        {         
-            Console.Write("Username: ");
-            world.slowType("Kritzkingvoid", 60);
-            Console.Write("Password: ");
-            world.slowType("***********", 60);
-            Console.Clear();
-        }
+     
     }
 }
