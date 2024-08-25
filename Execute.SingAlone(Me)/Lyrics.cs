@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.IO;
+using System.CodeDom.Compiler;
 
 namespace Execute.SingAlone_Me_
 {
@@ -70,6 +71,8 @@ namespace Execute.SingAlone_Me_
                 }
             }
             Console.ResetColor();
+
+
         }
       
         public static void worldExecuteMe()
@@ -78,16 +81,18 @@ namespace Execute.SingAlone_Me_
             readFile("textFiles/logoRhine");
             slowType("Remember to Put on -- P R O T E C T I O N", 50, true, 2, "");
             Console.WriteLine("\u001b[33m>encryptEnigma();\u001b[0m");
-            simulateLoading(" Encryption Set",20,10);
+            simulateLoading("Encryption Set",20,10);
             Console.WriteLine("");
             slowType("Lay down your pieces and let's begin \u001b[33m objectCreation(); \u001b[0m", 50, true, 0, "");
-            animateText("[Console] Fill in my data.", "", "green", 5,false);
+            animateText("[Console]Fill in my data.", "", "green", 5,false);
             readFile("textFiles/createObject");
             slowType("Parameters. ", 70, true, 0, "");
             List<string> listy = new List<string> { "bVJijcss", "ijcssjzpTjH9no@K-emz", "1+Rza-<cT+G\"sC6IhJci!b ", "8V!g8WFkHzm<", "9no@K-emz", "56.23.15  >> Rotors ON " };
             encryptWall(3,listy);
             slowType("Initialization.", 60, true, 0, "");
+            Console.ForegroundColor = ConsoleColor.Red;
             readFile("textFiles/getError");
+            Console.ResetColor();
             animateText("world.toggleValidity(false)", "", "yellow", 3, false);
             animateText("world.toggleTelementary(false)", "", "yellow", 3, false);
             simulateLoading(" Applyting World Settings",10,10);
@@ -96,10 +101,12 @@ namespace Execute.SingAlone_Me_
             animateText("world.addThing(me);", "", "yellow", 1, false);
             animateText("world.addThing(You);", "", "yellow", 1, false);
             slowType("let's begin...", 30, true, 0, "");
-            slowType("T H E  S I M U L A T I O N <3", 45, true, 0, "");
+            slowType("T H E  S I M U L A T I O N ::", 45, true, 0, "");
+            Console.Clear();
             animateText("world.activateSimulation()", "", "yellow", 5, false);
-            simulateWorld();
-            Thread.Sleep(200);
+            simulateWorld(1);
+            readFile("textFiles/getServer");
+            Thread.Sleep(180);
             //2nd Chorus
             ////
             readFile("textFiles/newWorldSettings");
@@ -134,7 +141,7 @@ namespace Execute.SingAlone_Me_
             List<string> timeTravel = new List<string> { "[World] Setting Locations:████████████ ", "[World]: Setting Locations: BABY████████████ ", "[World]: Setting Locations: BABYLON, Year: 2332 B.C " };
             encryptWall(1, timeTravel);
             slowType("And we can unite to", 70, true, 0, "");
-            readFile("textFiles/getDeeply");
+            readFile("textFiles/getDeeply1");
             slowType("soo deeply,", 80, true, 0, "");
             animateText("me.addLover('you')", "", "yellow", 3, false);
             slowType("soo deeply", 80, true, 0, "");
@@ -150,36 +157,37 @@ namespace Execute.SingAlone_Me_
             animateText("[REDACTED]", "[World] Deleting Character: ","", 2, false);
             slowType("If I can make you happy,", 50, true, 0, "");
             slowType("I will run the  \u001b[31mworld.execution();\u001b[0m", 50, true, 0, "");
+            animateText("Simulation already Active", "[World] ", "", 2, false);
             readFile("textFiles/newWorldSettings");
             slowType("Though we are trapped in this STRANGE, strange simulation", 40, true, 0, "");
             slowType("If I'm an eggplant", 90, true, 0, "");
             readFile("textFiles/getEggplant");
             slowType("the I will you my nutrients", 70, true, 0, "");
-            animateText("if(me is Eggplant) => you.addAttribute(me.getAttribute('nutrients'))", "", "", 2, false);
-            slowType("If I'm a tomato,", 90, true, 0, "");
+            animateText("if(me is Eggplant) =>you.addAttribute(me.getAttribute('nutrients'))", "", "", 2, false);
+            slowType("If I'm a tomato,", 85, true, 0, "");
             animateText("if(me is Apple) => you.addAttribute(me.getAttribute('antioxidants'))", "", "", 2, false);
             slowType("then I will give you antioxidants", 60, true, 0, "");
             readFile("textFiles/getTomato");
-            slowType("If I'm a tabby cat,", 90, true, 0, "");
+            slowType("If I'm a tabby cat,", 87, true, 0, "");
             animateText("if(me is Cat){ => you.addAttribute(me.getLanguage('meow'))", "", "", 2, false);
             slowType("then I will purr for your enjoyment", 50, true, 0, "");
             readFile("textFiles/getCat");
-            slowType("If I'm the only \u001b[31mGOD\u001b[0m,", 55, true, 0, "");
+            slowType("If I'm the only \u001b[31mGOD\u001b[0m,", 40, true, 0, "");
             animateText("[REDACTED] as Owner", "[World] Set player ", "", 2, false);
             animateText("[REDACTED] as Owner", "[World] Set player ", "", 2, false);
             animateText("[REDACTED] as Owner", "[World] Set player ", "", 2, false);
-            slowType("then you're the proof of my ", 55, false, 0, "");
+            slowType("then you're the proof of my ", 50, false, 0, "");
             animateText("E X I S T A N C E", "[World] Set player", "red", 3, false);
-            slowType("Switch my gender to \u001b[31mF to M\u001b[0m", 80, true, 0, "");
+            slowType("Switch my gender to \u001b[31mF to M\u001b[0m", 75, true, 0, "");
             animateText("Male", "[World] Set player's gender:", "", 3, false);
-            slowType("And then do whatever from \u001b[31mAM to PM\u001b[0m", 80, true, 1, "");
+            slowType("And then do whatever from \u001b[31mAM to PM\u001b[0m", 70, true, 1, "");
             animateText("UTC + 8", "[World] Changing Timezone:", "", 5, false);
             animateText("4:23 P.M 22/10/2023", "[World] Updating Time: ", "", 5, false);
-            slowType("Oh, switch my role \u001b[31mS to M\u001b[0m", 90, true, 1, "");
-            slowType("((Lovable)me.toggleKink())", 50, true, 0, "yellow");
-            slowType("So we can enter the trance, the trance", 80, true, 0, "");
-            List<string> trance = new List<string> { "th", "the T","the Tra", "the Tran%&^*(", "      the Trance" };
-            encryptWall(2, trance);
+            slowType("Oh, switch my role \u001b[31mS to M\u001b[0m", 85, true, 1, "");
+            slowType("me.toggleLovable())", 55, true, 0, "yellow");
+            slowType("So we can enter the trance, the trance", 60, true, 0, "");
+            //List<string> trance = new List<string> { "th", "the T","the Tra", "the Tran%&^*(", "      the Trance" };
+            //encryptWall(2, trance);
             slowType("If I can,", 80, true, 0, "");
             slowType("If I can", 80, true, 0, "");
             slowType("if I can, feel your vibrations", 80, true, 0, "");
@@ -187,25 +195,67 @@ namespace Execute.SingAlone_Me_
             slowType("then I can finally be completion", 60, true, 0, "1");
             simulateLoading("C O M P L E T I O N", 10, 10);
             Console.WriteLine();
-            slowType("Though you have left,", 60, true, 1, "1");
-            slowType("Though you have left,", 60, true, 1, "1");
-            Console.WriteLine("");
+            slowType("Though you have left,", 70, true, 1, "1");
+            slowType("Though you have left,", 65, true, 1, "1");
             animateText("THOUGH YOU HAVE LEFT!", "[Console] ", "red", 10, false);
-            Console.WriteLine("");
             animateText("THOUGH YOU HAVE LEFT!", "[Console] ", "red", 10, false);
-            slowType("You have left me in isolation", 70, true, 0, "");
+            animateText("THOUGH YOU HAVE LEFT!", "[Console] ", "red", 10, false);
+            slowType("You have left me in isolation", 73, true, 0, "");
 
 
             slowType("If I can,", 80, true, 0, "1");
             slowType("If I can", 80, true, 0, "1");
             slowType("Erase all the pointless fragments", 80, true, 0, "");
             slowType("Then maybe,", 80, true, 0, "");
-            slowType("then maybe, you won't leave me so disheartened", 80, true, 1, "");
-            slowType("Challenging your God", 80, true, 1, "");
-            slowType("You have made some ILLEGAL ARGUMENTS", 80, true, 0, "red");
-
-
-
+            slowType("then maybe, you won't leave me so disheartened", 70, true, 1, "");
+            slowType("Challenging your God", 100, true, 1, "");
+            animateText("$@$%)#()#*)#*^^#(", "[Console] ", "red", 5, false);
+            slowType("You have made some ILLEGAL ARGUMENTS *", 93, true, 0, "red");
+            slowType("(*&(%#)()_%(# some ILLEGAL ARGUMENTS *", 85, true, 0, "red");
+            slowType("You ha40)(*$)_@%@$ ILLEGAL ARGUMENTS *", 85, true, 0, "red");
+            slowType("You have 78^*&(*)*$#LLEGAL ARGUMENTS *", 85, true, 0, "red");
+            slowType("You have made some ILLEGAL ARGUMENTS *", 110, true, 0, "red");
+            readFile("textFiles/newWorldSettings");
+            readFile("textFiles/getError");
+            readFile("textFiles/getError");
+            Console.Clear();
+            slowType("EXECUTION", 110, true, 0, "red");
+            slowType("EXECUTION", 120, true, 0, "red");
+            slowType("EXECUTION", 120, true, 0, "red");
+            slowType("EXECUTION", 120, true, 0, "red");
+            slowType("EXECUTION", 120, true, 0, "red");
+            slowType("EXECUTION", 120, true, 0, "red");
+            slowType("EXECUTION", 120, true, 0, "red");
+            slowType("EXECUTION", 120, true, 0, "red");
+            slowType("EXECUTION", 110, true, 0, "red");
+            slowType("EXECUTION", 110, true, 0, "red");
+            Console.Clear();
+            slowType("Ein, dos, trois,  , fem,  , EXECUTION", 70, true, 0, "red");
+            Console.ForegroundColor = ConsoleColor.Red;
+            readFile("textFiles/getError");
+            readFile("textFiles/getError2");
+            Console.ResetColor();
+            Console.Clear();
+            slowType("If I can, if I can give them all the EXECUTION", 70, true, 0, "red");
+            slowType("Then I can, then I can be your only EXECUTION", 70, true, 0, "red");
+            slowType("If I can have you back, I will run the EXECUTION", 70, true, 0, "red");
+            readFile("textFiles/getError2");
+            slowType("Though we are trapped, we are trapped, ah ah ah ah", 70, true, 0, "red");
+            Console.Clear();
+            slowType("I've studied, I've studied how to properly l-o-ove", 75, true, 0, "red");
+            slowType("Question me, question me I can answer all lo-o-ove", 70, true, 0, "red");
+            readFile("textFiles/getError2");
+            Console.Clear();
+            slowType("I know the algebraic expression of lo-ove", 65, true, 0, "red");
+            slowType("Though you are free, I am trapped, trapped in l-0-o-ve", 60, true, 0, "red");
+            simulateWorld2(2);
+            readFile("textFiles/getError2");
+            Console.Clear();
+            slowType("EXECUTION", 40, true, 0, "red");
+            readFile("textFiles/getError2");
+            readFile("textFiles/getError2");
+            readFile("textFiles/getError2");
+            readFile("textFiles/getError2");
         }
 
         public static void simulateLoading(string message, int delayAmount, int barAmount)
@@ -236,19 +286,39 @@ namespace Execute.SingAlone_Me_
             }
             return charArray;
         }
-        static void simulateWorld()
+        static void simulateWorld(int worldtype)
         {
             int totalBars = 69;
-            int delay = 200;
+            int delay = 187;
             string[] phrases = { "Adding. 'You' and 'Me'.", "Generating the Universe", "Adding Star and Moons..", "Crafting the Narrative." };
             Random random = new Random();         
             Console.WriteLine("████████Generating World████████");
-            readFile("textFiles/generatingWorld");
+            readFile("textFiles/generatingWorld" + worldtype);
             Console.WriteLine("Seed ID: 03108891624980232");
             for (int i = 0; i <= totalBars; i++)
             {
                 string randomPhrase = phrases[random.Next(phrases.Length)];
                 string progressBar =   randomPhrase+" [" + new string('#', i) + new string('-', totalBars - i) + "]";
+                double percent = Math.Ceiling(i * 10 / 6.9);
+                Console.Write("\r{0} {1}%", progressBar, percent);
+                Thread.Sleep(delay);
+            }
+            Console.WriteLine();
+        }
+        static void simulateWorld2(int worldtype)
+        {
+            int totalBars = 69;
+            int delay = 181;
+            string[] phrases = { "4$@(*&$J$@", "A@$@$%%#", "$%#%.", "Alice" };
+            Random random = new Random();
+            Console.WriteLine("Lobotomy Corp. INC - 2022");
+            readFile("textFiles/logoRhine2");
+            Console.WriteLine("4129@$_(921242421");
+            Console.WriteLine("42@#@!#24124");
+            for (int i = 0; i <= totalBars; i++)
+            {
+                string randomPhrase = phrases[random.Next(phrases.Length)];
+                string progressBar = randomPhrase + " [" + new string('#', i) + new string('-', totalBars - i) + "]";
                 double percent = Math.Ceiling(i * 10 / 6.9);
                 Console.Write("\r{0} {1}%", progressBar, percent);
                 Thread.Sleep(delay);
@@ -303,7 +373,7 @@ namespace Execute.SingAlone_Me_
             }
             else
             {
-                Console.Write("\r" + actorTalk + " " + animateWord);
+                Console.Write("\r" + actorTalk + "" + animateWord);
             }
 
             Console.ResetColor();
