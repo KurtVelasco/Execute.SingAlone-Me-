@@ -4,6 +4,8 @@
 
 I wrote this code like a year ago, I apolagize if its messy. Its rushed bit, but I'm happy with the results
 
+Link to Video : https://www.youtube.com/watch?v=_C6OrKY4ki4
+
 I tried to atleast make it modular for the different char animation acommapnied by the Console, You can go through with
 the different animation in **Lyrics.cs**
 
